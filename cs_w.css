@@ -76,6 +76,10 @@ nav a:hover {
 color: #0511F2;  
 text-shadow: -1px 0px 3px #edeb78;  
 }
+nav a:visited {
+color: #020659;  
+text-shadow: -1px 0px 3px #F8F0E3;
+}
 nav ul {
 margin: 0;
 list-style-type: none; 
