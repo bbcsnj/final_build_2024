@@ -76,6 +76,7 @@ nav a:hover {
 color: #0511F2;  
 text-shadow: -1px 0px 3px #edeb78;  
 }
+/* HAD TO ADD THIS SO IT WOULDN'T CHANGE COLORS ONCE THE WEBSITE WAS LIVE */
 nav a:visited {
 color: #020659;  
 text-shadow: -1px 0px 3px #F8F0E3;
