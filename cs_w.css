@@ -1,1 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {box-sizing: border-box;}
+html { 
+min-height: 100%; 
+margin: 0;
+padding: 0;
+}
+body { 
+min-height: 100%;
+/*position: relative;*/
+display: flex;
+flex-direction: column;
+box-sizing: inherit;
+/*padding-bottom: 30px;*/
+margin: 0;
+}
+body {
+background-image: 
+linear-gradient(to bottom, #E9EAEA 30%, #7C7271 70%);
+background-repeat: no-repeat;
+background-size: cover;
+}
+header {
+background-color: #0F398C;
+height: 155px;
+background-image: linear-gradient(to right, #FFEB0F 3%, #A4A3B3 17%, #385773 80%);  
+}
+.bg_img1 {
+background-image: url(https://images-forclass-02112024.netlify.app/Woman_Laptop_Image_forWeb_no_bg.png);
+background-position: -20px -20px;
+background-size: auto 200px;
+background-repeat: no-repeat;
+height: 100%;
+}
+h1 {
+margin: 0;
+margin-left: 190px;
+margin-right: 54px;
+font-family: "Alegreya Sans SC", sans-serif;
+color: #E6CE65;
+text-shadow: 3px 3px 3px #021221;
+text-align: right;
+font-size: 2.5rem;
+padding: 1rem .25rem;
+height: 100%;
+}
+/* #wrapper {
+margin: auto;
+width: 90%;
+height: 100%;
+flex-grow: 1;
+} */
+nav {
+margin: 0;
+background-color: #86A5C4;
+text-align: center;
+position: sticky;
+top: 0;
+}
+nav a{
+font-family: "Alegreya Sans SC", sans-serif;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.25rem;
+}
+nav a:link {
+color: #020659;  
+text-shadow: -1px 0px 3px #F8F0E3;
+}
+nav a:hover {
+color: #0511F2;  
+text-shadow: -1px 0px 3px #edeb78;  
+}
+nav ul {
+margin: 0;
+list-style-type: none; 
+}
+nav li {
+display: inline-block;
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+padding: .5rem 1rem;
+}
+main {
+background-color: #F6F4EC;
+height: 100%;
+margin: 0;
+padding: 10px 25px;
+color: #061A35;
+font-family: "Roboto", sans-serif;
+/* COPIED AND PASTED FROM MY WRAPPER CSS */
+margin: auto;
+width: 90%;
+flex-grow: 1;  
+}
+.strong {
+font-weight: 500;
+}
+.italic {
+font-style: italic;
+}
+footer { 
+/*border: 2px solid black;*/ 
+margin: 0;
+background-color: #7C7271;
+/*position: absolute;*/
+width: 100%;
+height: 43px;
+/*bottom: 0; 
+left: 0;
+right: 0;*/
+}
+footer p {
+font-family: "Roboto", sans-serif; 
+text-align: center;
+margin: 0;
+padding: .8rem 0;
+text-shadow: -1px 0px 2px #F8F0E3;
+font-weight: bold;
+font-size: 0.9rem;
+}
+.right {
+float: right;
+padding: 2px;
+margin-top: 15px;
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+border-radius: 5%;
+border: 0.5px solid #504E53;
+background-color: #504E53;
+}
+/* EDITED FROM THE HAMBURGER MENU TUTORIAL */
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li a {
+  display: block;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+ 
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px darkblue;
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media (max-width: 450px) {
+  .toggle-button {
+    display: flex;
+  }
+  
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .navbar-links ul li {
+    text-align: center;
+    border-bottom: 1px solid black;
+        
+  }
+  
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }
+}  
+/* MEDIA QUERY FOR MOBILE */
+ @media (max-width: 450px){
+  
+  nav {
+    order: 1;   
+  }
+  
+  header {
+    order: 2;   
+  } 
+   
+  main {
+    order: 3;   
+  }
+   
+  footer {
+    order: 4;   
+  }
+   
+  main {
+    width: 100%;    
+  } 
+
+  nav li {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  padding: .5rem 1rem;
+  } 
+   
+ }
+  
+ /* ADDED MEDIA QUERY JUST FOR THE IMAGE */
+ @media (max-width: 575px){  
+  .adjust {
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+  }
+  .right { 
+  float:none; 
+  display:block;
+  padding: 2px;
+  margin-top: 15px;
+  margin-bottom: 5px;  
+  border-radius: 5%;
+  border: 0.5px solid #504E53;
+  background-color: #504E53;
+  }  
+   
+  h1 {
+  font-size: 2rem;  
+  } 
+ }  
+
+ /* ADDED MEDIA QUERY JUST FOR THE IMAGE */
+@media (max-width: 460px){ 
+  h1 {
+  font-size: 1.5rem;  
+  } 
+ 
+}   
