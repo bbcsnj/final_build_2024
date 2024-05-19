@@ -263,7 +263,7 @@ background-color: #504E53;
  /* ADDED MEDIA QUERY JUST FOR THE IMAGE */
 @media (max-width: 460px){ 
   h1 {
-  font-size: 1.5rem;  
+  font-size: 1.4rem;  
   } 
  
 }   
