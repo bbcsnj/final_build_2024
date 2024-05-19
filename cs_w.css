@@ -263,16 +263,31 @@ background-color: #504E53;
   border: 0.5px solid #504E53;
   background-color: #504E53;
   }  
-   
-  h1 {
-  font-size: 2rem;  
-  } 
+
  }  
 
- /* ADDED MEDIA QUERY JUST FOR THE IMAGE */
-@media (max-width: 460px){ 
+ /* ADDED MEDIA QUERY JUST FOR MY H1 HEADER */
+@media (max-width: 700px){ 
   h1 {
-  font-size: 1.4rem;  
+  font-size: 2.2rem;  
+  }  
+
+ /* ADDED MEDIA QUERY JUST FOR MY H1 HEADER */
+@media (max-width: 600px){ 
+  h1 {
+  font-size: 2rem;  
+  }  
+  
+ /* ADDED MEDIA QUERY JUST FOR MY H1 HEADER */
+@media (max-width: 500px){ 
+  h1 {
+  font-size: 1.8rem;  
   } 
- 
+
+ /* ADDED MEDIA QUERY JUST FOR MY H1 HEADER */
+@media (max-width: 470px){ 
+  h1 {
+  font-size: 1.5rem;  
+  }   
+  
 }   
