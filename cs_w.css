@@ -292,7 +292,6 @@ background-color: #504E53;
  /* ADDED MEDIA QUERY JUST FOR MY H1 HEADER */
 @media (max-width: 470px){ 
   h1 {
-  font-size: 1.5rem;  
-  }   
-  
+  font-size: 1.4rem;  
+  }     
 }   
